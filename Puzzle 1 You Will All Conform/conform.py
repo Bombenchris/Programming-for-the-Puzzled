@@ -28,6 +28,9 @@ def pleaseConform(caps):
             start = i
 
     #Need to add the last interval after for loop completes execution
+
+    #Could be simplify by adding Ending to the list (preprocessing the data list)
+    #Preprocessing the data list, to [,....,..., 'End']
     intervals.append((start, len(caps) - 1, caps[start]))
     if caps[start] == 'F':
         forward += 1
